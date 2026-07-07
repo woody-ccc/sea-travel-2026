@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>东南亚旅行计划 · 2026.9.23 – 2027.1.1</title>
+  <meta name="description" content="101天东南亚深度游：越南、泰国、印尼四王岛、EDC普吉、曼谷跨年，成都往返。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #f6f3ee;
+      --surface: #ffffff;
+      --ink: #1a2332;
+      --muted: #5c6778;
+      --accent: #c45c26;
+      --accent-soft: #f4e4d8;
+      --sea: #0f4c5c;
+      --sea-light: #e8f2f4;
+      --border: #ddd6cb;
+      --shadow: 0 12px 40px rgba(26, 35, 50, 0.08);
+      --radius: 14px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: "Noto Sans SC", system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.7;
+      font-size: 15px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #0f4c5c 0%, #1a6b7a 45%, #c45c26 100%);
+      color: #fff;
+      padding: 4rem 1.5rem 5rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 80% 20%, rgba(255,255,255,0.12), transparent 45%);
+      pointer-events: none;
+    }
+
+    .hero-inner { max-width: 960px; margin: 0 auto; position: relative; }
+
+    .hero-tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      background: rgba(255,255,255,0.15);
+      padding: 0.35rem 0.75rem;
+      border-radius: 999px;
+      margin-bottom: 1rem;
+    }
+
+    .hero h1 {
+      font-family: "Noto Serif SC", serif;
+      font-size: clamp(1.8rem, 5vw, 2.8rem);
+      font-weight: 700;
+      line-height: 1.25;
+      margin-bottom: 0.75rem;
+    }
+
+    .hero .dates { font-size: 1.1rem; opacity: 0.92; margin-bottom: 1.25rem; }
+
+    .route-pill {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 1rem;
+    }
+
+    .route-pill span {
+      background: rgba(255,255,255,0.14);
+      border: 1px solid rgba(255,255,255,0.2);
+      padding: 0.25rem 0.65rem;
+      border-radius: 999px;
+      font-size: 0.82rem;
+    }
+
+    .layout {
+      max-width: 1100px;
+      margin: -2.5rem auto 3rem;
+      padding: 0 1.25rem;
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      gap: 1.75rem;
+      align-items: start;
+    }
+
+    nav.toc {
+      position: sticky;
+      top: 1.25rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+      box-shadow: var(--shadow);
+    }
+
+    nav.toc h2 {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+      margin-bottom: 0.75rem;
+    }
+
+    nav.toc a {
+      display: block;
+      color: var(--ink);
+      text-decoration: none;
+      font-size: 0.88rem;
+      padding: 0.35rem 0;
+      border-bottom: 1px solid transparent;
+    }
+
+    nav.toc a:hover { color: var(--accent); }
+
+    main { min-width: 0; }
+
+    section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.75rem;
+      margin-bottom: 1.25rem;
+      box-shadow: var(--shadow);
+    }
+
+    section h2 {
+      font-family: "Noto Serif SC", serif;
+      font-size: 1.35rem;
+      color: var(--sea);
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--sea-light);
+    }
+
+    section h3 {
+      font-size: 1rem;
+      color: var(--ink);
+      margin: 1.25rem 0 0.6rem;
+    }
+
+    p { margin-bottom: 0.75rem; color: var(--muted); }
+    p strong { color: var(--ink); }
+
+    .timeline {
+      background: var(--sea-light);
+      border-radius: 10px;
+      padding: 1rem 1.25rem;
+      font-family: ui-monospace, monospace;
+      font-size: 0.78rem;
+      line-height: 1.9;
+      overflow-x: auto;
+      color: var(--sea);
+      margin: 1rem 0;
+    }
+
+    .alert {
+      background: var(--accent-soft);
+      border-left: 4px solid var(--accent);
+      padding: 0.85rem 1rem;
+      border-radius: 0 8px 8px 0;
+      margin: 1rem 0;
+      font-size: 0.92rem;
+      color: #6b3d1f;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 0.85rem;
+      margin: 1rem 0;
+    }
+
+    .card {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1rem;
+      background: #faf9f7;
+    }
+
+    .card .label { font-size: 0.78rem; color: var(--muted); margin-bottom: 0.25rem; }
+    .card .value { font-weight: 700; color: var(--sea); font-size: 1rem; }
+    .card .place { font-size: 0.85rem; color: var(--muted); margin-top: 0.2rem; }
+
+    .stage {
+      border-left: 3px solid var(--sea);
+      padding: 0.5rem 0 0.5rem 1rem;
+      margin: 1rem 0;
+    }
+
+    .stage h3 { margin-top: 0; color: var(--sea); }
+
+    ul { margin: 0.5rem 0 0.75rem 1.25rem; color: var(--muted); }
+    li { margin-bottom: 0.35rem; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+      margin: 0.75rem 0 1rem;
+    }
+
+    th, td {
+      border: 1px solid var(--border);
+      padding: 0.55rem 0.65rem;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: var(--sea-light);
+      color: var(--sea);
+      font-weight: 600;
+    }
+
+    tr:nth-child(even) td { background: #faf9f7; }
+
+    .budget-tier {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin: 1rem 0;
+    }
+
+    .tier {
+      border-radius: 12px;
+      padding: 1.25rem;
+      border: 1px solid var(--border);
+    }
+
+    .tier.recommended {
+      border-color: var(--sea);
+      background: linear-gradient(180deg, #f0f8fa, #fff);
+      box-shadow: 0 8px 24px rgba(15, 76, 92, 0.12);
+    }
+
+    .tier h4 { font-size: 0.9rem; color: var(--muted); margin-bottom: 0.35rem; }
+    .tier .price { font-size: 1.5rem; font-weight: 700; color: var(--sea); }
+    .tier p { font-size: 0.85rem; margin-top: 0.5rem; margin-bottom: 0; }
+
+    .badge {
+      display: inline-block;
+      background: var(--sea);
+      color: #fff;
+      font-size: 0.7rem;
+      padding: 0.15rem 0.5rem;
+      border-radius: 999px;
+      margin-left: 0.35rem;
+      vertical-align: middle;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem 3rem;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 860px) {
+      .layout { grid-template-columns: 1fr; margin-top: -1.5rem; }
+      nav.toc { position: static; }
+      .hero { padding: 3rem 1.25rem 3.5rem; }
+    }
+
+    @media print {
+      nav.toc { display: none; }
+      .layout { grid-template-columns: 1fr; margin: 0; }
+      section { break-inside: avoid; box-shadow: none; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="hero-tag">Southeast Asia · 101 Days</div>
+      <h1>东南亚旅行计划</h1>
+      <p class="dates">2026 年 9 月 23 日 — 2027 年 1 月 1 日 · 曼谷跨年 · 成都返程</p>
+      <div class="route-pill">
+        <span>胡志明</span><span>富国岛</span><span>曼谷</span><span>芭提雅</span>
+        <span>涛岛</span><span>帕岸岛</span><span>清迈</span><span>四王岛</span>
+        <span>龙目岛</span><span>巴厘岛</span><span>普吉 EDC</span><span>曼谷</span><span>成都</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="layout">
+    <nav class="toc">
+      <h2>目录</h2>
+      <a href="#overview">行程概览</a>
+      <a href="#dates">核心日期</a>
+      <a href="#itinerary">分阶段行程</a>
+      <a href="#timeline">时间轴</a>
+      <a href="#visa">签证航班</a>
+      <a href="#budget">预算估算</a>
+      <a href="#booking">预订优先级</a>
+      <a href="#nye">曼谷跨年</a>
+      <a href="#tips">实用建议</a>
+    </nav>
+
+    <main>
+      <section id="overview">
+        <h2>一、行程概览</h2>
+        <p><strong>总时长 101 天</strong>（9 月 23 日出发，1 月 1 日曼谷飞成都返程）。</p>
+        <p>路线原则：自西向东、顺路走、不走回头路；<strong>两次入境泰国</strong>（中间印尼段），每次停留均在 60 天免签范围内。</p>
+        <div class="timeline">成都 → 胡志明 → 富国岛 → 曼谷 → 芭提雅 → 涛岛/帕岸岛 → 清迈 → 四王岛 → 龙目岛 → 巴厘岛 → 普吉 EDC → 曼谷跨年 → 成都</div>
+      </section>
+
+      <section id="dates">
+        <h2>核心日期锁定</h2>
+        <div class="cards">
+          <div class="card"><div class="label">Full Moon Party</div><div class="value">10 月 27 日</div><div class="place">帕岸岛 Haad Rin</div></div>
+          <div class="card"><div class="label">清迈天灯节 Yi Peng</div><div class="value">11 月 24–25 日</div><div class="place">清迈</div></div>
+          <div class="card"><div class="label">四王岛潜水</div><div class="value">11 月底 – 12 月中</div><div class="place">Raja Ampat</div></div>
+          <div class="card"><div class="label">EDC Thailand</div><div class="value">12 月 18–20 日</div><div class="place">普吉 Rhythm Park</div></div>
+          <div class="card"><div class="label">曼谷跨年</div><div class="value">12 月 31 日</div><div class="place">曼谷</div></div>
+          <div class="card"><div class="label">返程</div><div class="value">1 月 1 日</div><div class="place">BKK → 成都 CTU</div></div>
+        </div>
+        <div class="alert">⚠ 11 月 24 日天灯节与帕岸 Full Moon Party 撞期，FMP 选择 <strong>10 月 27 日</strong> 场次。</div>
+      </section>
+
+      <section id="itinerary">
+        <h2>二、分阶段详细行程</h2>
+
+        <div class="stage">
+          <h3>阶段 0：出发（9/23 前）</h3>
+          <ul>
+            <li>成都 → 胡志明：建议 9/22 晚或 9/23 凌晨抵达</li>
+            <li>参考航司：川航 / 越捷，约 ¥800 – 1,500</li>
+          </ul>
+        </div>
+
+        <div class="stage">
+          <h3>阶段 1：越南（9/23 – 10/4，12 天）</h3>
+          <ul>
+            <li>9/23–9/27 胡志明市（5 天）：战争遗迹博物馆、湄公河、Ben Thanh 市场</li>
+            <li>9/28–10/4 富国岛（7 天）：海滩、Sunset Sanato、夜市、浮潜</li>
+            <li>交通：SGN ↔ PQC 直飞约 1h，¥200 – 400</li>
+          </ul>
+        </div>
+
+        <div class="stage">
+          <h3>阶段 2：泰国中南（10/5 – 11/14，41 天）</h3>
+          <ul>
+            <li>10/5–10/8 曼谷（4 天）｜10/9–10/11 芭提雅（3 天）</li>
+            <li>10/13–10/18 涛岛：PADI Open Water 考证（6 天）</li>
+            <li>10/19–10/28 帕岸岛：10/27 Full Moon Party</li>
+            <li>10/29–11/14 涛岛 + 帕岸：可选 AOW、fun dive</li>
+            <li>涛岛 OW：8,000 – 12,000 THB（¥1,600 – 2,400）</li>
+          </ul>
+        </div>
+
+        <div class="stage">
+          <h3>阶段 3：清迈天灯节（11/15 – 11/27，13 天）</h3>
+          <ul>
+            <li>11/24–11/25 Yi Peng 天灯 + Loy Krathong 水灯</li>
+            <li>免费：塔佩门、Ping 河 Nawarat 桥</li>
+            <li>付费 CAD/Mae Jo：4,900 – 15,900 THB，提前 2–3 个月订票</li>
+          </ul>
+        </div>
+
+        <div class="stage">
+          <h3>阶段 4：四王岛（11/28 – 12/10，13 天）</h3>
+          <ul>
+            <li>11/28 飞索龙 Sorong → 11/29–12/10 潜水</li>
+            <li>11 月底旺季初期，比 12–1 月便宜约 15–25%</li>
+            <li>国家公园费 $100/人（约 ¥720）</li>
+          </ul>
+        </div>
+
+        <div class="stage">
+          <h3>阶段 5：龙目岛 + 巴厘岛（12/11 – 12/16，6 天）</h3>
+          <ul>
+            <li>12/11–12/13 龙目岛｜12/14 Mount Batur 火山日出</li>
+            <li>12/15–12/16 Canggu 冲浪入门</li>
+            <li>12/17 飞普吉</li>
+          </ul>
+        </div>
+
+        <div class="stage">
+          <h3>阶段 6：普吉 EDC（12/17 – 12/20，4 天）</h3>
+          <ul>
+            <li>12/18–12/20 EDC Thailand 三场（15:00 – 00:00）</li>
+            <li>GA 7,090 THB 起；VIP 13,390 THB 起；年满 20 岁</li>
+            <li>12/20 晚飞曼谷</li>
+          </ul>
+        </div>
+
+        <div class="stage">
+          <h3>阶段 7：曼谷跨年 + 返程（12/21 – 1/1，11 天）</h3>
+          <ul>
+            <li>12/31 跨年：CentralWorld / ICONSIAM / One Bangkok</li>
+            <li>1/1 曼谷 BKK → 成都 CTU（建议下午航班）</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="timeline">
+        <h2>三、时间轴一览</h2>
+        <div class="timeline">9 月           10 月                 11 月               12 月                   1 月
+├─ 越南 ──┤├─ 泰国潜水 + FMP ──┤├─ 清迈天灯 ──┤├─ 四王岛 ──┤├ 龙目巴厘 ┤├ EDC 普吉 ┤├ 曼谷跨年 → 成都
+ 9/23 起        10/27 FMP          11/24–25           潜水          火山冲浪    12/18–20      12/31</div>
+      </section>
+
+      <section id="visa">
+        <h2>四、签证与航班策略</h2>
+        <table>
+          <thead><tr><th>段落</th><th>国家</th><th>天数</th><th>说明</th></tr></thead>
+          <tbody>
+            <tr><td>9/23 – 10/4</td><td>越南</td><td>12</td><td>电子签 30 天或落地签</td></tr>
+            <tr><td>10/5 – 11/27</td><td>泰国 ①</td><td>54</td><td>免签 60 天内 ✓</td></tr>
+            <tr><td>11/28 – 12/16</td><td>印尼</td><td>19</td><td>落地签 30 天 ✓</td></tr>
+            <tr><td>12/17 – 1/1</td><td>泰国 ②</td><td>16</td><td>二次入境 ✓</td></tr>
+          </tbody>
+        </table>
+        <p>机票建议（Open-Jaw）：去程成都 → 胡志明；回程曼谷 → 成都；中间段分段购买。</p>
+      </section>
+
+      <section id="budget">
+        <h2>五、预算估算（人民币）</h2>
+        <p>共 <strong>101 天</strong>（约 100 晚），不含购物与出发前装备。建议心理预算 <strong>¥9 万 – 10 万</strong>。</p>
+
+        <div class="budget-tier">
+          <div class="tier">
+            <h4>穷游 / 性价比</h4>
+            <div class="price">¥5.5 – 6.5 万</div>
+            <p>青旅为主、四王岛潜店、天灯节免费场、EDC GA</p>
+          </div>
+          <div class="tier recommended">
+            <h4>均衡<span class="badge">推荐</span></h4>
+            <div class="price">¥8 – 10 万</div>
+            <p>中档住宿、四王岛船宿、GA EDC、关键活动全含</p>
+          </div>
+          <div class="tier">
+            <h4>舒适 / 少折腾</h4>
+            <div class="price">¥12 – 15 万+</div>
+            <p>好酒店、VIP EDC、高端船宿、私导课程</p>
+          </div>
+        </div>
+
+        <h3>5.1 国际及段间机票</h3>
+        <table>
+          <thead><tr><th>航段</th><th>时间</th><th>参考价格</th><th>购票建议</th></tr></thead>
+          <tbody>
+            <tr><td>成都 → 胡志明</td><td>9/22–9/23</td><td>¥800 – 1,500</td><td>提前 2–3 个月</td></tr>
+            <tr><td>富国岛 → 曼谷</td><td>10/5</td><td>¥300 – 600</td><td>VietJet / AirAsia</td></tr>
+            <tr><td>曼谷 → 涛岛</td><td>10/12</td><td>¥80 – 400</td><td>夜巴 + 渡轮最省</td></tr>
+            <tr><td>清迈 → 索龙</td><td>11/28</td><td>¥2,500 – 4,000</td><td>经曼谷或雅加达转机</td></tr>
+            <tr><td>索龙 → 龙目/巴厘</td><td>12/11</td><td>¥1,500 – 2,500</td><td>经 Makassar / 雅加达</td></tr>
+            <tr><td>巴厘岛 → 普吉</td><td>12/17</td><td>¥800 – 1,500</td><td>直飞或转一次</td></tr>
+            <tr><td>普吉 → 曼谷</td><td>12/20</td><td>¥200 – 500</td><td>亚航频繁</td></tr>
+            <tr><td>曼谷 → 成都</td><td>1/1</td><td>¥1,000 – 2,500</td><td>提前订返程</td></tr>
+            <tr><td><strong>小计</strong></td><td>—</td><td><strong>¥8,000 – 13,000</strong></td><td>Open-Jaw 更划算</td></tr>
+          </tbody>
+        </table>
+
+        <h3>5.2 住宿（约 100 晚）</h3>
+        <table>
+          <thead><tr><th>地区</th><th>晚数</th><th>穷游/晚</th><th>均衡/晚</th><th>阶段小计（均衡）</th></tr></thead>
+          <tbody>
+            <tr><td>胡志明 + 富国岛</td><td>12</td><td>¥80 – 120</td><td>¥120 – 180</td><td>¥1,800</td></tr>
+            <tr><td>曼谷 + 芭提雅</td><td>7</td><td>¥100 – 150</td><td>¥150 – 250</td><td>¥1,400</td></tr>
+            <tr><td>涛岛 + 帕岸岛</td><td>33</td><td>¥80 – 120</td><td>¥120 – 200</td><td>¥5,300</td></tr>
+            <tr><td>清迈（含天灯节）</td><td>13</td><td>¥120 – 200</td><td>¥180 – 300</td><td>¥3,100</td></tr>
+            <tr><td>四王岛</td><td>12</td><td>含潜费</td><td>¥400 – 800</td><td>¥6,000*</td></tr>
+            <tr><td>龙目 + 巴厘</td><td>6</td><td>¥100 – 150</td><td>¥150 – 300</td><td>¥1,350</td></tr>
+            <tr><td>普吉 EDC 周</td><td>4</td><td>¥250 – 400</td><td>¥350 – 600</td><td>¥1,900</td></tr>
+            <tr><td>曼谷跨年周</td><td>11</td><td>¥150 – 250</td><td>¥200 – 400</td><td>¥3,300</td></tr>
+            <tr><td><strong>合计</strong></td><td>100</td><td>—</td><td>—</td><td><strong>¥18,000 – 35,000</strong></td></tr>
+          </tbody>
+        </table>
+        <p>* 四王岛选船宿时，住宿通常已含在船费中。</p>
+
+        <h3>5.3 固定活动 / 门票</h3>
+        <table>
+          <thead><tr><th>项目</th><th>穷游</th><th>均衡</th><th>舒适</th><th>备注</th></tr></thead>
+          <tbody>
+            <tr><td>涛岛 PADI OW</td><td>¥1,600</td><td>¥2,000</td><td>¥2,500</td><td>全球最便宜之一</td></tr>
+            <tr><td>AOW 进阶</td><td>—</td><td>¥1,800</td><td>¥2,500</td><td>四王岛前建议完成</td></tr>
+            <tr><td>帕岸 FMP</td><td>¥300</td><td>¥500</td><td>¥800</td><td>入场 + 酒水</td></tr>
+            <tr><td>清迈天灯节</td><td>¥0</td><td>¥1,500</td><td>¥3,500</td><td>CAD 付费场</td></tr>
+            <tr><td>四王岛潜水</td><td>¥8,000</td><td>¥20,000</td><td>¥35,000</td><td>潜店 vs 船宿</td></tr>
+            <tr><td>EDC 普吉</td><td>¥1,500</td><td>¥2,000</td><td>¥4,000+</td><td>GA 7,090 THB 起</td></tr>
+            <tr><td>火山 + 冲浪</td><td>¥600</td><td>¥950</td><td>¥1,600</td><td>Batur + Canggu</td></tr>
+            <tr><td><strong>活动合计</strong></td><td><strong>¥12,000</strong></td><td><strong>¥28,000</strong></td><td><strong>¥45,000+</strong></td><td>四王岛影响最大</td></tr>
+          </tbody>
+        </table>
+
+        <h3>5.4 三档汇总</h3>
+        <table>
+          <thead><tr><th>项目</th><th>穷游</th><th>均衡 ⭐</th><th>舒适</th></tr></thead>
+          <tbody>
+            <tr><td>机票</td><td>¥9,000</td><td>¥12,000</td><td>¥15,000</td></tr>
+            <tr><td>住宿</td><td>¥18,000</td><td>¥28,000</td><td>¥45,000</td></tr>
+            <tr><td>餐饮</td><td>¥10,000</td><td>¥16,000</td><td>¥25,000</td></tr>
+            <tr><td>活动</td><td>¥12,000</td><td>¥28,000</td><td>¥45,000</td></tr>
+            <tr><td>交通 + 签证 + 缓冲</td><td>¥7,300</td><td>¥11,200</td><td>¥17,500</td></tr>
+            <tr><td><strong>总计</strong></td><td><strong>≈ ¥5.7 万</strong></td><td><strong>≈ ¥9.5 万</strong></td><td><strong>≈ ¥14.8 万</strong></td></tr>
+          </tbody>
+        </table>
+
+        <h3>5.5 每日现金消耗（均衡档）</h3>
+        <table>
+          <thead><tr><th>阶段</th><th>日均</th><th>主要构成</th></tr></thead>
+          <tbody>
+            <tr><td>越南 / 泰国日常</td><td>¥250 – 350</td><td>住宿 + 餐饮 + 交通</td></tr>
+            <tr><td>涛岛考证期</td><td>¥400 – 500</td><td>含课程分摊</td></tr>
+            <tr><td>清迈天灯节周</td><td>¥400 – 600</td><td>旺季住宿溢价</td></tr>
+            <tr><td>四王岛</td><td>¥800 – 1,500</td><td>船宿 / 潜店</td></tr>
+            <tr><td>EDC + 跨年周</td><td>¥500 – 800</td><td>不含 EDC 门票</td></tr>
+          </tbody>
+        </table>
+
+        <h3>5.6 出发前预付清单（均衡档约 ¥3.5 – 5 万）</h3>
+        <ul>
+          <li>国际机票（去程 + 回程）：¥2,000 – 4,000</li>
+          <li>四王岛船宿订金：¥5,000 – 10,000</li>
+          <li>EDC 门票 GA 三日：¥1,500 – 2,500</li>
+          <li>清迈 11/24–25 住宿：¥1,500 – 3,000</li>
+          <li>Yi Peng 付费场（可选）：¥1,000 – 3,500</li>
+          <li>100 天旅行保险：¥400 – 800</li>
+        </ul>
+      </section>
+
+      <section id="booking">
+        <h2>六、预订优先级</h2>
+        <table>
+          <thead><tr><th>时间</th><th>预订项目</th></tr></thead>
+          <tbody>
+            <tr><td>现在 – 8 月</td><td>清迈 11/24–25 住宿；Yi Peng 付费场次</td></tr>
+            <tr><td>9 月</td><td>EDC 门票 + 普吉住宿；四王岛船宿/潜店</td></tr>
+            <tr><td>10 月</td><td>涛岛潜店；帕岸 10/25–28 住宿</td></tr>
+            <tr><td>11 月</td><td>BKK → CTU 返程机票；曼谷跨年住宿</td></tr>
+            <tr><td>12 月</td><td>Batur 徒步；Canggu 冲浪课</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="nye">
+        <h2>七、曼谷跨年推荐</h2>
+        <table>
+          <thead><tr><th>场地</th><th>特色</th></tr></thead>
+          <tbody>
+            <tr><td>CentralWorld</td><td>「亚洲时代广场」，数字烟花 + 演唱会，免费</td></tr>
+            <tr><td>ICONSIAM</td><td>湄南河河畔，烟花视野极佳，免费</td></tr>
+            <tr><td>One Bangkok</td><td>隆比尼公园，无人机 + 烟花，免费</td></tr>
+          </tbody>
+        </table>
+        <p>建议 12/31 下午提前占据 CentralWorld 或 ICONSIAM 一带。</p>
+      </section>
+
+      <section id="tips">
+        <h2>八、实用建议</h2>
+        <ul>
+          <li>泰国岛际：夜巴 + 渡轮比飞 Surat Thani 省 ¥200+</li>
+          <li>涛岛 OW + 四王岛 fun dive 是全球潜水性价比最高组合之一</li>
+          <li>四王岛 11 月底属 shoulder season，比 12–1 月便宜 15–25%</li>
+          <li>龙目岛消费比巴厘岛低 30–50%</li>
+          <li>EDC 票越早买越便宜；想压进 ¥6 万：四王岛改潜店、全程青旅</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <p>生成日期：2026 年 7 月 7 日 · 节日日期与票价可能变动，出发前请核实官方信息</p>
+  </footer>
+</body>
+</html>
