@@ -208,6 +208,15 @@
 
     .stage h3 { margin-top: 0; color: var(--sea); }
 
+    .stage-notes {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin: 0.5rem 0 0.25rem;
+      padding-left: 0.25rem;
+    }
+
+    .stage-notes strong { color: var(--ink); }
+
     ul { margin: 0.5rem 0 0.75rem 1.25rem; color: var(--muted); }
     li { margin-bottom: 0.35rem; }
 
@@ -341,74 +350,120 @@
 
         <div class="stage">
           <h3>阶段 0：出发（9/23 前）</h3>
-          <ul>
-            <li>成都 → 胡志明：建议 9/22 晚或 9/23 凌晨抵达</li>
-            <li>参考航司：川航 / 越捷，约 ¥800 – 1,500</li>
-          </ul>
+          <table>
+            <thead><tr><th>日期</th><th>航段</th><th>说明</th></tr></thead>
+            <tbody>
+              <tr><td>9/22 晚或 9/23 凌晨</td><td>成都 CTU → 胡志明 SGN</td><td>建议红眼航班，落地后可直接开始行程</td></tr>
+            </tbody>
+          </table>
+          <p class="stage-notes"><strong>参考航司：</strong>川航 / 越捷 / 南航 · <strong>票价：</strong>¥800 – 1,500 · 提前 2–3 个月购票</p>
         </div>
 
         <div class="stage">
           <h3>阶段 1：越南（9/23 – 10/4，12 天）</h3>
-          <ul>
-            <li>9/23–9/27 胡志明市（5 天）：战争遗迹博物馆、湄公河、Ben Thanh 市场</li>
-            <li>9/28–10/4 富国岛（7 天）：海滩、Sunset Sanato、夜市、浮潜</li>
-            <li>交通：SGN ↔ PQC 直飞约 1h，¥200 – 400</li>
-          </ul>
+          <table>
+            <thead><tr><th>日期</th><th>地点</th><th>天数</th><th>内容</th></tr></thead>
+            <tbody>
+              <tr><td>9/23 – 9/27</td><td>胡志明市</td><td>5</td><td>战争遗迹博物馆、湄公河一日游、Ben Thanh 市场、范五老街</td></tr>
+              <tr><td>9/28 – 10/4</td><td>富国岛</td><td>7</td><td>长滩海滩、Sunset Sanato、夜市、浮潜 / 跳岛、渔村日落</td></tr>
+            </tbody>
+          </table>
+          <p class="stage-notes"><strong>交通：</strong>SGN ↔ PQC 直飞约 1h（VietJet / Bamboo）· <strong>¥200 – 400</strong></p>
+          <p class="stage-notes"><strong>住宿：</strong>¥150 – 250/晚 · <strong>餐饮：</strong>越南性价比极高，日均 ¥150 – 250</p>
         </div>
 
         <div class="stage">
           <h3>阶段 2：泰国中南（10/5 – 11/14，41 天）</h3>
-          <ul>
-            <li>10/5–10/8 曼谷（4 天）｜10/9–10/11 芭提雅（3 天）</li>
-            <li>10/13–10/18 涛岛：PADI Open Water 考证（6 天）</li>
-            <li>10/19–10/28 帕岸岛：10/27 Full Moon Party</li>
-            <li>10/29–11/14 涛岛 + 帕岸：可选 AOW、fun dive</li>
-            <li>涛岛 OW：8,000 – 12,000 THB（¥1,600 – 2,400）</li>
-          </ul>
+          <table>
+            <thead><tr><th>日期</th><th>地点</th><th>天数</th><th>内容</th></tr></thead>
+            <tbody>
+              <tr><td>10/5 – 10/8</td><td>曼谷</td><td>4</td><td>大皇宫、玉佛寺、Chatuchak 周末市场、考山路、湄南河游船</td></tr>
+              <tr><td>10/9 – 10/11</td><td>芭提雅</td><td>3</td><td>真理寺、Walking Street、格兰岛跳岛、东芭乐园（可选）</td></tr>
+              <tr><td>10/12</td><td>转场</td><td>1</td><td>曼谷东站大巴 → 春蓬 / 素叻他尼 + 渡轮至涛岛</td></tr>
+              <tr><td>10/13 – 10/18</td><td>涛岛 Koh Tao</td><td>6</td><td><strong>PADI Open Water 考证</strong>（3–4 天课程 + 1–2 天缓冲恢复）</td></tr>
+              <tr><td>10/19 – 10/26</td><td>帕岸岛 Koh Phangan</td><td>8</td><td>提前抵达 Haad Rin，熟悉派对场地，海滩休整</td></tr>
+              <tr><td><strong>10/27</strong></td><td>帕岸岛</td><td>1</td><td><strong>Full Moon Party</strong>（Haad Rin 满月派对）</td></tr>
+              <tr><td>10/28 – 11/14</td><td>涛岛 + 帕岸</td><td>18</td><td>可选 AOW 进阶、fun dive；两岛船程 1–2h，慢节奏海岛生活</td></tr>
+            </tbody>
+          </table>
+          <p class="stage-notes"><strong>涛岛 OW 考证：</strong>8,000 – 12,000 THB（¥1,600 – 2,400）· 推荐潜店：Ban's、Crystal、Sairee Diving</p>
+          <p class="stage-notes"><strong>交通：</strong>曼谷 → 涛岛夜巴 + 渡轮约 ¥150；芭提雅大巴回曼谷约 2h</p>
+          <p class="stage-notes"><strong>FMP 住宿：</strong>10/25 前订 Haad Rin 附近，派对周涨价明显</p>
+          <p class="stage-notes"><strong>泰国第一次入境：</strong>10/5 – 11/27，约 54 天 ✓</p>
         </div>
 
         <div class="stage">
           <h3>阶段 3：清迈天灯节（11/15 – 11/27，13 天）</h3>
-          <ul>
-            <li>11/24–11/25 Yi Peng 天灯 + Loy Krathong 水灯</li>
-            <li>免费：塔佩门、Ping 河 Nawarat 桥</li>
-            <li>付费 CAD/Mae Jo：4,900 – 15,900 THB，提前 2–3 个月订票</li>
-          </ul>
+          <table>
+            <thead><tr><th>日期</th><th>地点</th><th>天数</th><th>内容</th></tr></thead>
+            <tbody>
+              <tr><td>11/15 – 11/23</td><td>清迈</td><td>9</td><td>古城寺庙、Doi Suthep、烹饪课、宁曼路；天灯节氛围预热</td></tr>
+              <tr><td><strong>11/24 – 11/25</strong></td><td>清迈</td><td>2</td><td><strong>Yi Peng 天灯节</strong> + <strong>Loy Krathong 水灯节</strong></td></tr>
+              <tr><td>11/26 – 11/27</td><td>清迈</td><td>2</td><td>缓冲休整、购物、转场准备飞印尼</td></tr>
+            </tbody>
+          </table>
+          <p class="stage-notes"><strong>免费观礼：</strong>塔佩门广场、Ping 河 Nawarat 桥放天灯 / 水灯</p>
+          <p class="stage-notes"><strong>付费大规模放灯（CAD / Mae Jo）：</strong>4,900 – 15,900 THB · 提前 2–3 个月订票</p>
+          <p class="stage-notes"><strong>住宿：</strong>11 月旺季，建议 8 月前预订；节日期间房价涨 50% – 100%</p>
+          <p class="stage-notes"><strong>交通：</strong>苏梅 / 素叻他尼或曼谷飞清迈，亚航约 ¥300 – 600</p>
         </div>
 
         <div class="stage">
-          <h3>阶段 4：四王岛（11/28 – 12/10，13 天）</h3>
-          <ul>
-            <li>11/28 飞索龙 Sorong → 11/29–12/10 潜水</li>
-            <li>11 月底旺季初期，比 12–1 月便宜约 15–25%</li>
-            <li>国家公园费 $100/人（约 ¥720）</li>
-          </ul>
+          <h3>阶段 4：四王岛 Raja Ampat（11/28 – 12/10，13 天）</h3>
+          <table>
+            <thead><tr><th>日期</th><th>地点</th><th>天数</th><th>内容</th></tr></thead>
+            <tbody>
+              <tr><td>11/28</td><td>飞行日</td><td>1</td><td>清迈 / 曼谷 → 雅加达 / 望加锡转机 → <strong>索龙 Sorong (SOQ)</strong></td></tr>
+              <tr><td>11/29 – 12/10</td><td>四王岛</td><td>12</td><td><strong>船宿或潜店基地潜水</strong>，8–10 潜起；Manta、珊瑚礁、鱼群风暴</td></tr>
+            </tbody>
+          </table>
+          <p class="stage-notes"><strong>季节：</strong>11 月底属旺季初期，比 12–1 月便宜约 15–25%，海况已很好</p>
+          <p class="stage-notes"><strong>前提：</strong>需已有 OW 证；流较强，建议 AOW 或 20+ 潜经验</p>
+          <p class="stage-notes"><strong>国家公园费：</strong>$100/人（约 ¥720）· <strong>船宿参考：</strong>¥18,000 – 25,000（7D6N）</p>
         </div>
 
         <div class="stage">
           <h3>阶段 5：龙目岛 + 巴厘岛（12/11 – 12/16，6 天）</h3>
-          <ul>
-            <li>12/11–12/13 龙目岛｜12/14 Mount Batur 火山日出</li>
-            <li>12/15–12/16 Canggu 冲浪入门</li>
-            <li>12/17 飞普吉</li>
-          </ul>
+          <table>
+            <thead><tr><th>日期</th><th>地点</th><th>天数</th><th>内容</th></tr></thead>
+            <tbody>
+              <tr><td>12/11 – 12/13</td><td>龙目岛 Lombok</td><td>3</td><td>Kuta Lombok 海滩、Gili 三岛浮潜 / 跳岛、萨萨克文化村（可选）</td></tr>
+              <tr><td>12/14</td><td>巴厘岛</td><td>1</td><td><strong>Mount Batur 火山日出徒步</strong>（凌晨出发，含向导早餐）</td></tr>
+              <tr><td>12/15 – 12/16</td><td>巴厘岛 Canggu</td><td>2</td><td><strong>冲浪入门</strong> 1–2 课；海滩日落、咖啡馆休整</td></tr>
+              <tr><td>12/17 早</td><td>转场</td><td>—</td><td>DPS → HKT 飞普吉（约 4h，直飞或转机一次）</td></tr>
+            </tbody>
+          </table>
+          <p class="stage-notes"><strong>龙目 → 巴厘：</strong>Bangsal 快船至 Gili → Padang Bai 至巴厘，或 LOP → DPS 飞 25 分钟（约 ¥200）</p>
+          <p class="stage-notes"><strong>火山徒步：</strong>¥150 – 300 · <strong>冲浪课：</strong>¥150 – 250/课</p>
         </div>
 
         <div class="stage">
           <h3>阶段 6：普吉 EDC（12/17 – 12/20，4 天）</h3>
-          <ul>
-            <li>12/18–12/20 EDC Thailand 三场（15:00 – 00:00）</li>
-            <li>GA 7,090 THB 起；VIP 13,390 THB 起；年满 20 岁</li>
-            <li>12/20 晚飞曼谷</li>
-          </ul>
+          <table>
+            <thead><tr><th>日期</th><th>地点</th><th>天数</th><th>内容</th></tr></thead>
+            <tbody>
+              <tr><td>12/17</td><td>普吉岛</td><td>1</td><td>抵达 Laguna 区、取票、EDC Takeover Week 预热派对</td></tr>
+              <tr><td><strong>12/18 – 12/20</strong></td><td>Rhythm Park</td><td>3</td><td><strong>EDC Thailand</strong> 三场音乐节（15:00 – 00:00）</td></tr>
+              <tr><td>12/20 晚</td><td>转场</td><td>—</td><td>普吉 HKT → 曼谷 BKK（亚航约 ¥200 – 500）</td></tr>
+            </tbody>
+          </table>
+          <p class="stage-notes"><strong>地点：</strong>Laguna Phuket, Rhythm Park · <strong>GA 票：</strong>7,090 THB 起 · <strong>VIP：</strong>13,390 THB 起</p>
+          <p class="stage-notes"><strong>购票：</strong>Eventpop / thailand.electricdaisycarnival.com · 年满 20 岁 · festival 周住宿早订</p>
         </div>
 
         <div class="stage">
           <h3>阶段 7：曼谷跨年 + 返程（12/21 – 1/1，11 天）</h3>
-          <ul>
-            <li>12/31 跨年：CentralWorld / ICONSIAM / One Bangkok</li>
-            <li>1/1 曼谷 BKK → 成都 CTU（建议下午航班）</li>
-          </ul>
+          <table>
+            <thead><tr><th>日期</th><th>地点</th><th>天数</th><th>内容</th></tr></thead>
+            <tbody>
+              <tr><td>12/21 – 12/30</td><td>曼谷</td><td>10</td><td>EDC 后休整、二刷曼谷景点、买手信、按摩、提前踩点跨年场地</td></tr>
+              <tr><td><strong>12/31</strong></td><td>曼谷</td><td>1</td><td><strong>跨年倒计时</strong>：CentralWorld / ICONSIAM / One Bangkok</td></tr>
+              <tr><td><strong>1/1</strong></td><td>返程</td><td>—</td><td><strong>曼谷 BKK → 成都 CTU</strong>（建议下午 / evening 航班）</td></tr>
+            </tbody>
+          </table>
+          <p class="stage-notes"><strong>跨年建议：</strong>12/31 下午占据 CentralWorld 或 ICONSIAM 河畔一带，烟花视野最佳</p>
+          <p class="stage-notes"><strong>返程机票：</strong>泰航 / 川航 / 国航直飞约 3h · ¥1,000 – 2,500 · 提前 2–3 个月购买</p>
+          <p class="stage-notes"><strong>泰国第二次入境：</strong>12/17 – 1/1，约 16 天 ✓</p>
         </div>
       </section>
 
